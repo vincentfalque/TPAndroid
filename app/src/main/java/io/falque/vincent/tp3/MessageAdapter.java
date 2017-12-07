@@ -59,7 +59,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
         void setData(Message message) {
             mUserTextView.setText(message.userName + ": ");
             mContentTextView.setText(message.content);
-            Glide.with(mUserImageView.getContext()).load(Utils.GRAVATAR_PREFIX + Utils.md5(message.userEmail))
+            Glide.with(mUserImageView.getContext()).load(Utils.GRAVATAR_PREFIX + Utils.md5(message.userEmail) + ".jpg")
                     .apply(RequestOptions.circleCropTransform()).into(mUserImageView);
         }
     }

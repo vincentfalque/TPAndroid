@@ -39,7 +39,7 @@ public class UserStorage {
 
     public static User getUser(Context context) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-        return new User(preferences.getString(USER_NAME, USER_UNDEFINED), preferences.getString(USER_NAME, USER_UNDEFINED));
+        return new User(preferences.getString(USER_NAME, USER_UNDEFINED), preferences.getString(USER_EMAIL, USER_UNDEFINED));
     }
 
 }
