@@ -1,18 +1,16 @@
 # TPAndroid - TP3
 
-Cette application permet d'échanger des messages avec différents internautes via la base de données FireBase
+Cette application permet d'échanger des messages avec différents internautes via la base de données FireBase. En lançant l'application, l'utilisateur va pouvoir saisir son identifiant et son adresse email pour se connecter. Il va alors accéder à l'activité présentant le chat 
+
+L'ensemble des principales questions a été réalisé 
 
 ## Screenshots
 
-![Screenshot](LoginActivity.png)
+  <img src="LoginActivity.png" width="250"/>
 
 L'activité permettant de choisir son identifiant et son adresse email.
 
-
-
-  <img src="LoginActivity.png" width="350"/>
-  <img src="your_relative_path_here_number_2_large_name" width="350"/>
-![Screenshot](MainActivity.png)
+  <img src="MainActivity" width="250"/>
 
 L'activité principale, où sont affichés les messages des différents utilisateurs et où ils peuvent être saisis.
 
