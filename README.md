@@ -1,12 +1,17 @@
-# TPAndroid
+# TPAndroid - TP3
 
-Mon appl
+Cette application permet d'échanger des messages avec différents internautes via la base de données FireBase
+
 ## Screenshots
 
 ![Screenshot](LoginActivity.png)
 
 L'activité permettant de choisir son identifiant et son adresse email.
 
+
+
+  <img src="LoginActivity.png" width="350"/>
+  <img src="your_relative_path_here_number_2_large_name" width="350"/>
 ![Screenshot](MainActivity.png)
 
 L'activité principale, où sont affichés les messages des différents utilisateurs et où ils peuvent être saisis.
