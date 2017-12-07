@@ -3,14 +3,16 @@
 Mon appl
 ## Screenshots
 
+![Screenshot](LoginActivity.png)
 
+L'activité permettant de choisir son identifiant et son adresse email.
 
-Je teste
+![Screenshot](MainActivity.png)
+
+L'activité principale, où sont affichés les messages des différents utilisateurs et où ils peuvent être saisis.
 
 
 ## License
-
-License
 
 Copyright 2017 The Android Open Source Project, Inc.
 
