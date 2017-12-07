@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name">TP2</string>
+    <string name="app_name">TP3</string>
+    <string name="nameInput">Nom</string>
+    <string name="emailInput">Email</string>
+    <string name="envoyer">Envoyer</string>
+    <string name="sendInput">Envoyer</string>
     <string name="title_activity_login">Login</string>
+    <string name="action_logout">Logout</string>
 </resources>
