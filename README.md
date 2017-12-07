@@ -10,7 +10,7 @@ L'ensemble des principales questions a été réalisé
 
 L'activité permettant de choisir son identifiant et son adresse email.
 
-  <img src="MainActivity" width="250"/>
+  <img src="MainActivity.png" width="250"/>
 
 L'activité principale, où sont affichés les messages des différents utilisateurs et où ils peuvent être saisis.
 
