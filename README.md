@@ -2,7 +2,7 @@
 
 Cette application permet d'échanger des messages avec différents internautes via la base de données FireBase. En lançant l'application, l'utilisateur va pouvoir saisir son identifiant et son adresse email pour se connecter. Il va alors accéder à l'activité principale, présentant le chat.
 
-L'ensemble des principales questions a été réalisé et plusieurs bonus ont été effectués comme la récupération automatique de l'adresse email de l'utilisateur, la mise en place d'un logo personnalisé pour l'application, l'affichage de la date d'envoie dynamique (elle s'actualise en scrollant le chat) et la mise en place du bouton permettant de se déconnecter et de revenir à l'activité de login.
+L'ensemble des principales questions a été réalisé (notamment la mise en place de Glide et l'affichage des avatars récupérés de Gravatar) et plusieurs bonus ont été effectués comme la récupération automatique de l'adresse email de l'utilisateur, la mise en place d'un logo personnalisé pour l'application, l'affichage de la date d'envoie dynamique (elle s'actualise en scrollant le chat) et la mise en place du bouton permettant de se déconnecter et de revenir à l'activité de login.
 
 Pour récupérer et tester ce projet, il suffit de le télécharger ou le cloner à partir de Github, de le lancer sur Android-Studio et de lancer l'application sur un téléphone ou via un émulateur.
 
