@@ -3,10 +3,10 @@ package io.falque.vincent.tp3;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class Utils {
-    public static final String GRAVATAR_PREFIX = "https://www.gravatar.com/avatar/";
+class Utils {
+    static final String GRAVATAR_PREFIX = "https://www.gravatar.com/avatar/";
 
-    public static final String md5(final String s) {
+    static String md5(final String s) {
         final String MD5 = "MD5";
         if(s != null) {
             try {

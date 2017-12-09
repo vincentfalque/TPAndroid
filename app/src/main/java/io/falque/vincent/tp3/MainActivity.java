@@ -9,7 +9,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
@@ -79,23 +78,6 @@ public class MainActivity extends AppCompatActivity implements ValueEventListene
         mDatabaseReference.removeEventListener(this);
     }
 
-    private void connectAndListenToFirebase() {
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        mDatabaseReference = database.getReference("chat/messages");
-
-        mDatabaseReference.addValueEventListener(this);
-    }
-
-    @Override
-    public void onDataChange(DataSnapshot dataSnapshot) {
-        Log.d(TAG, "dataChange : " + dataSnapshot);
-        List<Message> items = new ArrayList<>();
-        for (DataSnapshot messageSnapshot : dataSnapshot.getChildren()) {
-            items.add(messageSnapshot.getValue(Message.class));
-        }
-        mMessageAdapter.setData(items);
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //ajoute les entrées de menu_test à l'ActionBar
@@ -115,6 +97,23 @@ public class MainActivity extends AppCompatActivity implements ValueEventListene
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void connectAndListenToFirebase() {
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        mDatabaseReference = database.getReference("chat/messages");
+
+        mDatabaseReference.addValueEventListener(this);
+    }
+
+    @Override
+    public void onDataChange(DataSnapshot dataSnapshot) {
+        Log.d(TAG, "dataChange : " + dataSnapshot);
+        List<Message> items = new ArrayList<>();
+        for (DataSnapshot messageSnapshot : dataSnapshot.getChildren()) {
+            items.add(messageSnapshot.getValue(Message.class));
+        }
+        mMessageAdapter.setData(items);
     }
 
     @Override

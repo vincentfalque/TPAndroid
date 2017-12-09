@@ -14,10 +14,9 @@ import java.util.List;
 
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHolder> {
 
-
     private List<Message> mData;
 
-    public MessageAdapter(List<Message> data) {
+    MessageAdapter(List<Message> data) {
         mData = data;
     }
 

@@ -10,8 +10,6 @@ import android.widget.EditText;
 
 public class LoginActivity extends AppCompatActivity {
 
-    public static final String TAG = LoginActivity.class.getSimpleName();
-
     EditText mNameEditText;
     EditText mEmailEditText;
     Button mSubmitButton;
