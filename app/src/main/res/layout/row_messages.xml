@@ -12,7 +12,6 @@
         android:id="@+id/card_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        card_view:cardElevation="7dp"
         card_view:cardCornerRadius="10dp"
         android:layout_margin="5dp">
 
@@ -24,8 +23,8 @@
 
         <ImageView
             android:id="@+id/avatarProfile"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginEnd="12dp"
             android:layout_marginRight="12dp"
             android:maxWidth="10dp"

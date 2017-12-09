@@ -18,7 +18,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements ValueEventListener {
@@ -65,8 +67,11 @@ public class MainActivity extends AppCompatActivity implements ValueEventListene
                     return;
                 }
                 DatabaseReference newData = mDatabaseReference.push();
+
+                Long timestamp = System.currentTimeMillis();
+
                 newData.setValue(
-                    new Message(mInputEditText.getText().toString(), user.getNom(), user.getEmail(), 0L));
+                    new Message(mInputEditText.getText().toString(), user.getNom(), user.getEmail(), timestamp));
                 mInputEditText.setText("");
             }
         });

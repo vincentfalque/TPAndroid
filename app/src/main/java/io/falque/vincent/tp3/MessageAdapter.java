@@ -10,7 +10,10 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHolder> {
 
@@ -57,7 +60,8 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
 
         void setData(Message message) {
             mUserTextView.setText(message.userName + ": ");
-            mContentTextView.setText(message.content);
+
+            mContentTextView.setText(message.content + "\n" + Utils.timestampToString(message.timestamp));
             Glide.with(mUserImageView.getContext()).load(Utils.GRAVATAR_PREFIX + Utils.md5(message.userEmail) + ".jpg")
                     .apply(RequestOptions.circleCropTransform()).into(mUserImageView);
         }
